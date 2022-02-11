@@ -1,0 +1,361 @@
+:root {
+  --light-color: #fefefe;
+  --light-green: #c6efa9;
+  --dark-green: #37934a;
+  --orange: #d0480c;
+}
+
+@font-face {
+  font-family: "Kaftan Serif";
+  src: url("../fonts/Kaftan\ Serif.otf") format("opentype");
+  src: url("../fonts/Kaftan\ Serif.ttf") format("truetype");
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x:hidden;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: var(--light-color);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--light-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: var(--orange);
+}
+
+nav {
+  background-color: var(--dark-green);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Kaftan Serif";
+}
+
+.nav-link {
+  color: var(--light-green) !important;
+  margin-left: 3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+nav img:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.active {
+  background: var(--light-green);
+  color: var(--dark-green) !important;
+  border-radius: 2px 2px 0 0;
+  margin-bottom: -8px;
+}
+
+.active:hover {
+  transform: scale(1.1) rotate(0deg);
+}
+
+nav img {
+  width: 20%;
+  margin-bottom: -50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background: var(--dark-green);
+}
+
+.show {
+  margin-top: 2.5rem;
+}
+
+.section-full-height {
+  min-height: 100vh;
+  padding: 5rem;
+}
+
+.bg-green {
+  background: var(--light-green);
+}
+
+.bg-orange {
+  background: var(--orange);
+}
+
+.bg-green .col-md-6,
+.bg-orange .col-md-6,
+.bg-green {
+  margin: auto;
+}
+
+h1 {
+  font-family: "Kaftan Serif";
+}
+
+.dark-title {
+  color: var(--dark-green);
+  margin-bottom: 2rem;
+}
+
+.light-title {
+  color: var(--light-green);
+  margin-bottom: 2rem;
+}
+
+.orange-title {
+  color: var(--orange);
+  margin-bottom: 2rem;
+}
+
+.dark-paragraph {
+  color: var(--dark-green);
+  font-size: 16px;
+  margin-bottom: 2rem;
+  text-indent: 1.5rem;
+}
+
+.dark-paragraph i {
+  color: var(--orange);
+}
+
+.light-paragraph {
+  color: var(--light-green);
+  font-size: 16px;
+  margin-bottom: 2rem;
+  text-indent: 1.5rem;
+}
+
+.orange-paragraph {
+  color: var(--orange);
+  font-size: 16px;
+  margin-bottom: 2rem;
+  text-indent: 1.5rem;
+}
+
+.bg-available,
+.bg-sold {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: var(--light-green);
+}
+
+.bg-available {
+  background: var(--dark-green);
+}
+
+.bg-sold {
+  background: var(--orange);
+}
+
+.col {
+  align-items: center;
+}
+
+.btn-green {
+  color: var(--dark-green);
+  background: var(--light-green);
+  border-color: var(--dark-green);
+  font-family: "Raleway", sans-serif;
+  border-radius: 0;
+  box-shadow: -5px 5px 1px var(--dark-green);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-green:hover {
+  color: var(--light-green);
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
+  box-shadow: -1px 1px 1px var(--dark-green);
+}
+
+.form-control {
+  box-shadow: -5px 5px 1px var(--dark-green);
+  border-radius: 1px;
+  font-family: "Raleway", sans-serif;
+}
+
+.form-control:focus {
+  box-shadow: -1px 1px 1px var(--dark-green);
+  border-radius: 1px;
+  border-color: var(--orange);
+}
+
+label {
+  font-family: "Kaftan Serif";
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0 !important;
+  color: var(--dark-green);
+}
+
+#emailHelp {
+  color: var(--orange);
+  font-size: 0.8rem;
+}
+
+/* SOBRE---------------------------------------------------------------------------------- */
+#container-sobre {
+  padding: 0;
+  padding-top: 2rem;
+  overflow-x: hidden;
+}
+
+.index__container-img {
+  position: relative;
+}
+
+.index__image-arch {
+  width: auto;
+  height: 500px;
+  border-radius: 250px 250px 0 0;
+  box-shadow: -10px 10px 1px var(--orange);
+  border: 2px solid var(--orange);
+}
+
+.index__star-sticker {
+  height: 10rem;
+  position: absolute;
+  right: 20%;
+}
+
+#index__container-img-margin {
+  margin: auto 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#index__sideways-arch {
+  width: auto;
+  height: 350px;
+  border-radius: 250px 0 0 250px;
+  box-shadow: -10px 10px 1px var(--light-green);
+  border: 2px solid var(--light-green);
+  margin-left: 3rem;
+}
+
+.index__star-sticker-2 {
+  height: 10rem;
+  position: absolute;
+  left: 0;
+}
+
+.index__section-equipa {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  margin: auto;
+  padding: 0;
+}
+
+.index__img-equipa {
+  width: 90%;
+}
+
+#index__section-equipa-1 {
+  justify-content: flex-start;
+}
+
+#index__section-equipa-2 {
+  justify-content: center;
+}
+
+#index__section-equipa-3 {
+  justify-content: flex-end;
+}
+
+/* LOJA------------------------------------------------------------------------------------------------- */
+
+#container-estrelas {
+  position: relative;
+  overflow-x: hidden;
+}
+
+#loja__star-top {
+  position: absolute;
+  max-width: 20%;
+  right: -30px;
+  top: -20px;
+}
+
+.card {
+  border-radius: 200px 200px 0 0;
+  overflow: hidden;
+  box-shadow: -10px 10px 1px var(--orange);
+  border: solid 2px var(--orange);
+  text-decoration: none;
+  margin-top: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: -3px 3px 1px var(--orange);
+  transform: rotate(-10deg);
+}
+
+.card img {
+  height: 300px;
+}
+
+.card-body {
+  background: var(--light-color);
+  max-height: 200px;
+}
+
+.card-body p {
+  font-family: "Kaftan Serif";
+  color: var(--dark-green);
+}
+
+/* CONTACTOS--------------------------------------------------------------------------------------------------------------------- */
+.contactos__col{
+  margin:auto;
+}
+
+.contactos__instagram {
+  max-width: 550px;
+  max-height: 550px;
+  box-shadow: -10px 10px 1px 0 var(--orange);
+  text-decoration: none;
+  margin: auto;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.contactos__instagram img {
+  max-width: 550px;
+  max-height: 550px;
+}
+
+.contactos__instagram:hover {
+  cursor: pointer;
+  box-shadow: -3px 3px 1px var(--orange);
+  transform: rotate(-5deg);
+}
+
+/* FOOTER----------------------------------------------------------------------------------------------------------------------- */
+footer {
+  background: var(--dark-green);
+  width: 100%;
+  text-align: center;
+  font-family: "Kaftan Serif";
+  color: var(--light-green);
+}
+
+footer p {
+  margin-bottom: 0;
+  padding: 10px 0;
+  font-size: 12px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Line Shop</title>
+    <link rel="shortcut icon" href="img/logo-blob.png" type="image/x-icon"> 
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSRTAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONTAWESOME -->
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"/>
+
+    <!-- ANIMATE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--MEU CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="Green Line" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+          <span>
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </span> 
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav d-flex">
+            <a class="nav-link active" aria-current="page" href="#container-sobre">
+              Sobre
+            </a>
+            <a class="nav-link" href="loja.html">Loja </a>
+            <a class="nav-link" href="contactos.html">Contactos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <div class="container-fluid" id="container-sobre">
+      <div class="row">
+        <video src="video/green-line-video.mp4" style="max-width: 100%; margin-bottom: 0;" autoplay loop muted></video>
+      </div>
+      <div class="row section-full-height bg-green">
+        <div class="col-md-6 col-sm-12 index__container-img">
+          <img src="img/home-1.jpg" class="index__image-arch" />
+          <img src="img/estrela-laranja.png" class="index__star-sticker animate__animated animate__flip" />
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h1 class="dark-title">A origem</h1>
+          <p class="dark-paragraph">
+            A ideia de criarmos esta loja surgiu porque ambas nos preocupamos
+            com o impacto que o nosso consumo tem no meio ambiente.
+          </p>
+          <p class="dark-paragraph">
+            Ficámos cada vez mais conscientes e sensibilizadas para as
+            consequências que a indústria da <i>fast fashion</i> tem provocado
+            na nossa sociedade.
+          </p>
+        </div>
+      </div>
+      <div class="row section-full-height bg-orange">
+        <div class="col-md-6">
+          <h1 class="light-title">A jornada</h1>
+          <p class="light-paragraph">   Com ideais minimalistas e sustentáveis, começámos a dar preferência à compra de artigos em segunda mão. Sabemos perfeitamente que nem sempre é viável e que, muitas vezes, por inúmeras razões, temos que recorrer à fast fashion. No entanto, acreditamos que, ao diminuir o nosso consumo, todos juntos, estaremos a fazer uma grande diferença.</p>
+          <p class="light-paragraph"> Da nossa loja podem esperar artigos usados, tanto roupa como acessórios, peças que nunca chegaram a ser estreadas e artigos feitos à mão, utilizando tecidos de roupas que sejam recuperáveis e <i>deadstock</i> .</p>
+        </div>
+        <div class="col-md-6 index__container-img" >
+          <img src="img/home-2.jpg" id="index__sideways-arch" />
+          <img src="img/estrela-verde.png" class="index__star-sticker-2 animate__animated animate__flip" />
+        </div>      
+      </div>
+      <div class="row section-full-height bg-green">
+        <div class="col-md-4 index__section-equipa" id="index__section-equipa-1">
+          <img src="img/equipa-1.png" class="index__img-equipa">
+        </div>
+        <div class="col-md-4 index__section-equipa" id="index__section-equipa-2">
+          <h1 class="orange-title">A equipa</h1>
+          <p class="orange-paragraph">Ambas somos apaixonadas por moda e estilo, portanto achámos esta oportunidade perfeita para conciliarmos dois grandes interesses nossos: sustentabilidade e estética.</p>
+        </div>
+        <div class="col-md-4 index__section-equipa" id="index__section-equipa-3">
+          <img src="img/equipa-2.png" class="index__img-equipa">
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Todos os direitos reservados | Green Line &copy; 2021 | Ema Bonito</p>
+    </footer>
+
+    <!-- BOOTSRTAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
